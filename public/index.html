@@ -13,7 +13,7 @@
     <title>辰龙操作系统</title>
   </head>
   <body>
-   <div id="app" v-if="loaded">
+   <div id="app" style="height:100%;opacity:0;">
     <div class="hero-bg">
       <header class="container-fluid py-3 px-4">
         <nav class="navbar navbar-expand-lg mb-0 mb-lg-5">
@@ -403,8 +403,8 @@
 		    var resp = response.data
                     resp.forEach(function(data){
                         that.main[data.key] = data.value
-		    });
-	            that.loaded=1
+		            });
+                 $("#app").css({"opacity":1});
                 })
         },
         methods: {
