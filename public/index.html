@@ -13,7 +13,7 @@
     <title>辰龙操作系统</title>
   </head>
   <body>
-   <div id="app">
+   <div id="app" v-if="loaded">
     <div class="hero-bg">
       <header class="container-fluid py-3 px-4">
         <nav class="navbar navbar-expand-lg mb-0 mb-lg-5">
@@ -45,12 +45,12 @@
             </ul>
   
             <div class="nav-btn">
-              <button type="button" class="login btn border-0 me-3">
+              <a class="login btn border-0 me-3" v-bind:href="main.index_linkmenu6">
                 {{main.index_menu6}}
-              </button>
-              <button type="button" class="get-start btn btn-outline-primary px-4 rounded-pill">
+              </a>
+              <a class="get-start btn btn-outline-primary px-4 rounded-pill" v-bind:href="main.index_linkmenu7">
                {{main.index_menu7}}
-              </button>
+              </a>
             </div>
             
           </div>
@@ -68,8 +68,8 @@
                   <p class="hero-subheader mt-3">{{main.index_title2}}</p>
 
             <div class="hero-cto mt-5">
-                    <button class="btn get-start btn-primary px-4 py-2 rounded-pill">{{main.index_button1}}</button>
-                    <button class="btn trial ms-2 border-0 text-white">{{main.index_button2}}</button>
+                    <a class="btn get-start btn-primary px-4 py-2 rounded-pill" v-bind:href="main.index_linkbutton1" >{{main.index_button1}}</a>
+                    <a class="btn trial ms-2 border-0 text-white" v-bind:href="main.index_linkbutton2"> {{main.index_button2}}</a>
             </div>
           </div>
   
@@ -92,7 +92,7 @@
           <div class="taskSec-content mt-0 mt-md-5">
             <h1 class="section-heading fs-1 mb-3">{{main.index_title3}}</h1>
             <p class="section-subhead">{{main.index_title4}}</p>
-            <button class="btn mt-4 task-section-cto px-4 py-2 rounded-pill">{{main.index_title5}}</button>
+            <a class="btn mt-4 task-section-cto px-4 py-2 rounded-pill" v-bind:href="main.index_linktitle5" >{{main.index_title5}}</a>
           </div>
         </div>
       </div>
@@ -387,7 +387,7 @@
       const VueApp = {
         data() {
             return {
-		        loaded:1,
+		        loaded:0,
         	    main:{}
 	        }
         },
@@ -404,7 +404,7 @@
                     resp.forEach(function(data){
                         that.main[data.key] = data.value
 		    });
-	            that.loaded=0
+	            that.loaded=1
                 })
         },
         methods: {
