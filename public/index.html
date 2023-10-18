@@ -1,419 +1,514 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://lib.baomitu.com/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css" />
-
-    <title>辰龙操作系统</title>
-  </head>
-  <body>
-   <div id="app" style="height:100%;opacity:0;">
-    <div class="hero-bg">
-      <header class="container-fluid py-3 px-4">
-        <nav class="navbar navbar-expand-lg mb-0 mb-lg-5">
-          <a href="/" class="navbar-brand">
-            <img v-bind:src="main.index_logo" alt="logo" />
-          </a>
-  
-          <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav navigation me-auto ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" v-bind:href="main.index_linkmenu1">{{main.index_menu1}}</a>
-              </li>
-              <li class="nav-item">
-                      <a class="nav-link" v-bind:href="main.index_linkmenu2">{{main.index_menu2}}</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" v-bind:href="main.index_linkmenu3">{{main.index_menu3}}</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" v-bind:href="main.index_linkmenu4">{{main.index_menu4}}</a>
-              </li>
-              <li class="nav-item">
-                      <a class="nav-link" v-bind:href="main.index_linkmenu5">{{main.index_menu5}}</a>
-              </li>
-            </ul>
-  
-            <div class="nav-btn">
-              <a class="login btn border-0 me-3" v-bind:href="main.index_linkmenu6">
-                {{main.index_menu6}}
-              </a>
-              <a class="get-start btn btn-outline-primary px-4 rounded-pill" v-bind:href="main.index_linkmenu7">
-               {{main.index_menu7}}
-              </a>
+<html lang="zxx">
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.6.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>辰龙操作系统</title>
+  <meta name="next-head-count" content="3">
+   
+  <link rel="preload" href="/_next/static/css/5ae2d9cac32c624b.css" as="style">
+  <link rel="stylesheet" href="/_next/static/css/5ae2d9cac32c624b.css" data-n-g=""><noscript data-n-css=""></noscript>
+  <script defer nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
+  <script src="/_next/static/chunks/webpack-9b80295fa268c81f.js" defer></script>
+  <script src="/_next/static/chunks/framework-4729b95aa6cb8cde.js" defer></script>
+  <script src="/_next/static/chunks/main-626a8415e7c97950.js" defer></script>
+  <script src="/_next/static/chunks/pages/_app-b08f61ed69cec40b.js" defer></script>
+  <script src="/_next/static/chunks/3015-57a13fc1aa69fff0.js" defer></script>
+  <script src="/_next/static/chunks/5152-b28148349c07fbcb.js" defer></script>
+  <script src="/_next/static/chunks/4297-a67c07f2fb8fc5c9.js" defer></script>
+  <script src="/_next/static/chunks/3848-5c55847bb7709122.js" defer></script>
+  <script src="/_next/static/chunks/2089-021e0da24b4207a9.js" defer></script>
+  <script src="/_next/static/chunks/pages/index-2-8a4387e2bdd53dc4.js" defer></script>
+  <script src="/_next/static/T-sOTQUz-S7j8Cmc9JBws/_buildManifest.js" defer></script>
+  <script src="/_next/static/T-sOTQUz-S7j8Cmc9JBws/_ssgManifest.js" defer></script>
+  <script src="/_next/static/T-sOTQUz-S7j8Cmc9JBws/_middlewareManifest.js" defer></script>
+  <style id="__jsx-ad7e6003288221c4">
+  .preloader-area.jsx-ad7e6003288221c4{position:fixed;background:#fff;width:100%;top:0;height:100%;z-index:1010;left:0;text-align:center;opacity:.96}.preloader-area.jsx-ad7e6003288221c4 img.jsx-ad7e6003288221c4{margin-bottom:5px}.preloader-area.jsx-ad7e6003288221c4 p.jsx-ad7e6003288221c4{font-size:17px}
+  </style>
+  <style id="__jsx-5e588ef741f633f0">
+  .go-top.jsx-5e588ef741f633f0{bottom:0;z-index:4;opacity:0;right:20px;width:45px;height:45px;position:fixed;cursor:pointer;font-size:27px;text-align:center;visibility:hidden;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;color:var(--whiteColor);-webkit-transition:var(--transition);-moz-transition:var(--transition);-o-transition:var(--transition);transition:var(--transition);background:var(--gradientColor);-webkit-box-shadow:0px 3px 10px rgba(0,0,0,.1);-moz-box-shadow:0px 3px 10px rgba(0,0,0,.1);box-shadow:0px 3px 10px rgba(0,0,0,.1)}.go-top.jsx-5e588ef741f633f0 i.jsx-5e588ef741f633f0{left:0;top:50%;right:0;position:absolute;text-align:center;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);margin-left:auto;margin-right:auto}.go-top.active.jsx-5e588ef741f633f0{opacity:1;bottom:20px;visibility:visible}.go-top.jsx-5e588ef741f633f0:hover{-webkit-transform:translateY(-5px);-moz-transform:translateY(-5px);-ms-transform:translateY(-5px);-o-transform:translateY(-5px);transform:translateY(-5px)}@media only screen and (max-width:767px){.go-top.jsx-5e588ef741f633f0{right:10px;width:35px;height:35px;font-size:22px}.go-top.active.jsx-5e588ef741f633f0{bottom:10px}}@media only screen and (min-width:768px)and (max-width:991px){}@media only screen and (min-width:992px)and (max-width:1199px){}
+  </style>
+  <style id="__jsx-ad7e6003288221c4">
+  .preloader-area.jsx-ad7e6003288221c4{position:fixed;background:#fff;width:100%;top:0;height:100%;z-index:1010;left:0;text-align:center;opacity:.96}.preloader-area.jsx-ad7e6003288221c4 img.jsx-ad7e6003288221c4{margin-bottom:5px}.preloader-area.jsx-ad7e6003288221c4 p.jsx-ad7e6003288221c4{font-size:17px}
+  </style>
+  <style id="__jsx-5e588ef741f633f0">
+  .go-top.jsx-5e588ef741f633f0{bottom:0;z-index:4;opacity:0;right:20px;width:45px;height:45px;position:fixed;cursor:pointer;font-size:27px;text-align:center;visibility:hidden;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;color:var(--whiteColor);-webkit-transition:var(--transition);-moz-transition:var(--transition);-o-transition:var(--transition);transition:var(--transition);background:var(--gradientColor);-webkit-box-shadow:0px 3px 10px rgba(0,0,0,.1);-moz-box-shadow:0px 3px 10px rgba(0,0,0,.1);box-shadow:0px 3px 10px rgba(0,0,0,.1)}.go-top.jsx-5e588ef741f633f0 i.jsx-5e588ef741f633f0{left:0;top:50%;right:0;position:absolute;text-align:center;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);margin-left:auto;margin-right:auto}.go-top.active.jsx-5e588ef741f633f0{opacity:1;bottom:20px;visibility:visible}.go-top.jsx-5e588ef741f633f0:hover{-webkit-transform:translateY(-5px);-moz-transform:translateY(-5px);-ms-transform:translateY(-5px);-o-transform:translateY(-5px);transform:translateY(-5px)}@media only screen and (max-width:767px){.go-top.jsx-5e588ef741f633f0{right:10px;width:35px;height:35px;font-size:22px}.go-top.active.jsx-5e588ef741f633f0{bottom:10px}}@media only screen and (min-width:768px)and (max-width:991px){}@media only screen and (min-width:992px)and (max-width:1199px){}
+  </style>
+</head>
+<body>
+  <div id="__next">
+    <div id="navbar" class="navbar-area navbar-style-two">
+      <div class="texap-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="/"><img src="/images/black-logo.png" alt="logo"></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="dropdown-toggle nav-link" href="/">主页</a>
+                   
+                </li>
+                <li class="nav-item">
+                  <a class="dropdown-toggle nav-link" href="/#">rCore</a>
+                   
+                </li>
+                <li class="nav-item megamenu">
+                  <a class="dropdown-toggle nav-link" href="/#">下载</a>
+                   
+                </li>
+                <li class="nav-item">
+                  <a class="dropdown-toggle nav-link" href="https://www.github.com/rcore-os/arceos">ArceOS</a>
+ 
+                </li>
+                <li class="nav-item">
+                  <a class="dropdown-toggle nav-link" href="/#">日志</a>
+                  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#/">文档</a>
+                </li>
+              </ul>
             </div>
-            
-          </div>
-        </nav>
-
-        <svg class="bottom-curve" viewBox="0 0 834 99" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M242.5 2.48937C135.3 -9.90908 37.6667 26.7931 0 51.0969V99H834V14.4651C519.5 90.5465 449 26.3726 242.5 2.48937Z" fill="white"/>
-          </svg>
-          
-        
-        <!----------------- hero ---------------->
-        <div class="row gy-5">
-          <div class="col-lg-6 text-white">
-                  <h1 class="hero-header mt-5">{{main.index_title1}}</h1>
-                  <p class="hero-subheader mt-3">{{main.index_title2}}</p>
-
-            <div class="hero-cto mt-5">
-                    <a class="btn get-start btn-primary px-4 py-2 rounded-pill" v-bind:href="main.index_linkbutton1" >{{main.index_button1}}</a>
-                    <a class="btn trial ms-2 border-0 text-white" v-bind:href="main.index_linkbutton2"> {{main.index_button2}}</a>
+            <div class="others-options">
+              <a class="default-btn" href="https://github.com/chenlongos">Github</a>
             </div>
-          </div>
-  
-          <div class="col-lg-6">
-            <div class="hero-image">
-              <img class="feature" v-if="main.index_homeimage" v-bind:src="main.index_homeimage" alt="hero feature image" style="max-width:400px;height:auto;">
-            </div>
-          </div>
+          </nav>
         </div>
-      </header> 
+      </div>
     </div>
-
-    <!-- ---------------------------task------------------------------------ -->
-    <section id="About" class="task-section mt-0 mt-md-5 px-4">
-      <div class="row align-items-lg-center task-content gx-2 gy-5  justify-content-between flex-column-reverse flex-lg-row">
-        <div class="col col-lg-6">
-          <img class="task-feature" v-if="main.index_task" v-bind:src="main.index_task" alt="task picture" style="max-width:300px;height:auto;">
-        </div>
-        <div class="col col-lg-6">
-          <div class="taskSec-content mt-0 mt-md-5">
-            <h1 class="section-heading fs-1 mb-3">{{main.index_title3}}</h1>
-            <p class="section-subhead">{{main.index_title4}}</p>
-            <a class="btn mt-4 task-section-cto px-4 py-2 rounded-pill" v-bind:href="main.index_linktitle5" >{{main.index_title5}}</a>
-          </div>
-        </div>
-      </div>
-
-      <img class="round-shape" src="assets/img/round.svg" alt="round shape">
-    </section>
-
-    <!-- ---------------------------Chat------------------------------------ -->
-    <section class="chat-section mt-5 px-4">
-      <div class="row chat-content align-items-lg-center gx-2 gy-5 justify-content-between flex-lg-row">
-        <div class="col-lg-6 col-sm-12">
-          <div class="chatSec-content mt-5">
-            <h1 class="section-heading fs-1 mb-3">{{main.index_title6}}</h1>
-            <p class="section-subhead">{{main.index_title7}}</p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-           <img class="chat-feature" v-if="main.index_chat" v-bind:src="main.index_chat" alt="task picture" style="max-width:300px;height:auto;">
-  
-        </div>
-      </div>
-    </section>
-
-    <!----------------------------- pricing ----------------------->
-    <section id="Pricing" v-if="0">
-      <svg class="pricing-top-curve" viewBox="0 0 822 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M822 49C509.2 -35 143.667 14 0 49V0H822V49Z" fill="white"/>
-      </svg>
-
-      <div class="pricing-wrapper m-auto">
-        <div class="pricing-header m-auto">
-          <h1 class="section-heading text-center fs-1">{{main.index_title8}}</h1>
-          <p class="section-subhead text-center">{{main.index_title9}}</p>
-
-          <div class="m-auto mt-5 plan-switch section-subhead d-flex justify-content-center">
-            <span>Monthly</span>
-            <div class="switch-bar bg-white d-flex align-items-center rounded-pill me-2 ms-2">
-              <div class="bar-fill rounded-pill"></div>
-            </div>
-            <span>Annualy</span>
-          </div>
-        </div>
-
-        <div class="pricing-wrapper row mt-5 row-cols-1 row-cols-md-2 row-cols-lg-3 mb-3">
-          <div class="col">
-            <div class="card border-0 mb-4">
-              <div class="card-header px-5 text-white py-4">
-                <h4 class="my-0 mb-3 fs-5">Free plan</h4>
-                <p class="pricing-q mb-0">0$ <span class="ms-2">/Life time</span></p>
-              </div>
-              <div class="card-body px-5 pb-4">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li><i class="fa-solid fa-circle-check me-3"></i>Today & Planning view</li>
-                  <li><i class="fa-solid fa-circle-check me-3"></i>Checklist templates</li>
-                  <li><i class="fa-solid fa-circle-check me-3"></i>Calender integration</li>
-                  <li><i class="fa-solid fa-circle-check me-3"></i>Browser extention</li>
-                </ul>
-                <button class="btn mt-4 rounded-pill">Get Started</button>
-              </div>
+    <div class="banner-area">
+      <div class="container-fluid">
+        <div class="row align-items-center m-0">
+          <div class="col-lg-6 col-md-12 p-0">
+            <div class="banner-content">
+              <span class="sub-title"> </span>
+              <h1>欢迎使用辰龙操作系统</h1>
+              <p>   辰龙操作系统是基于清华大学 ArceOS 操作系统的发行版，旨在为智能汽车、机器人、物联网等领域的复杂系统提供高安全、高性能和自主可控的国产操作系统解决方案。</p><a class="default-btn" href="https://github.com/chenlongos">获取源码</a>
             </div>
           </div>
-          <div class="col">
-            <div class="card border-0 basic mb-4">
-              <div class="card-header border-0 px-5 text-white py-4">
-                <h4 class="my-0 mb-3 fs-5">Basic plan</h4>
-                <p class="pricing-q mb-0">10$ <span class="ms-2">/Per Month</span></p>
-
-                <span class="recommendad text-center text-dark">Recommendad</span>
-              </div>
-              <div class="card-body px-5 pb-4">
-                <ul class="list-unstyled mt-3 mb-4 text-white">
-                  <li><i class="fa-solid fa-circle-check me-3"></i>Everything in free</li>
-                  <li><i class="fa-solid fa-circle-check me-3"></i>Checklist templates</li>
-                  <li><i class="fa-solid fa-circle-check me-3"></i>Premium integration/li>
-                  <li><i class="fa-solid fa-circle-check me-3"></i>30-day trial</li>
-                </ul>
-                <button class="btn mt-4 bg-white rounded-pill">Get Started</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-0 mb-4">
-              <div class="card-header px-5 text-white py-4">
-                <h4 class="my-0 mb-3 fs-5">Advance plan</h4>
-                <p class="pricing-q mb-0">50$ <span class="ms-2">/Per Month</span></p>
-              </div>
-              <div class="card-body px-5 pb-4">
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li><i class="fa-solid fa-circle-check me-3"></i>Everything in Basic</li>
-                  <li><i class="fa-solid fa-circle-check me-3"></i>Unlimited members</li>
-                  <li><i class="fa-solid fa-circle-check me-3"></i>Dedicated support</li>
-                  <li><i class="fa-solid fa-circle-check me-3"></i>All advance features*</li>
-                </ul>
-                <button class="btn mt-4 rounded-pill">Get Started</button>
-              </div>
+          <div class="col-lg-6 col-md-12 p-0">
+            <div class="animated" style="animation-duration:2s;opacity:1">
+              <div class="banner-image"><img src="/images/banner/banner-app2.png" alt="image"></div>
             </div>
           </div>
         </div>
       </div>
-
-      <svg class="bottom-curve" viewBox="0 0 834 99" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M242.5 2.48937C135.3 -9.90908 37.6667 26.7931 0 51.0969V99H834V14.4651C519.5 90.5465 449 26.3726 242.5 2.48937Z" fill="white"/>
-        </svg>
-    </section>
-
-    <!----------------------- article ----------------------->
-    <section id="article" v-if="0">
-      <div class="article-heading-wrapper flex-wrap m-auto d-flex justify-content-between align-items-center">
-          <h1 class="section-heading">Ideas To Help You Navigate Work</h1>
-          <p class="mt-2 mt-lg-0 section-subhead ">We regularly share resources on startups, productivity and the future of work</p>
-          <button class="mt-3 mt-lg-0 btn text-white text-nowrap px-4 py-2 rounded-pill">See more articles</button>
-      </div>
-
-      <!-- slider -->
-      <div class="slider-wrapper mt-5 mt-sm-4 position-relative ms-lg-5 ps-lg-5">
-        <img src="assets/img/article-bg.svg" class="article-bg-svg">
-
-        <div class="row mx-auto my-auto justify-content-center">
-          <div id="recipeCarousel" class="article-carousel carousel slide p-0" data-bs-interval="false"
-          data-bs-ride="carousel" data-bs-touch="true">
-              <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
-                      <div class="col-md-3">
-                        <div class="card p-sm-4 bg-white border-0 me-md-4 mb-3">
-                          <div class="row g-0">
-                            <div class="col-5">
-                              <img src="assets/img/slider-1.png" class="img-fluid rounded-start" alt="article image">
-                              <div class="post-time section-subhead fs-6 mt-3">
-                                <small class="d-block text-muted">Posted on</small>
-                                <span class="date d-block">Octobor 26, 2021</span>
-                              </div>
-                            </div>
-                            <div class="col-7">
-                              <div class="ms-sm-3 card-body mt-3 p-0">
-                                <h5 class="card-title section-heading">What's growth hacking? 8 great books to learn more about it</h5>
-                                <p class="card-text section-subhead">How you can set personal boundaries to reduce stress and burnout</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                      <div class="col-md-3">
-                        <div class="card p-sm-4 bg-white border-0 me-md-4 mb-3">
-                          <div class="row g-0">
-                            <div class="col-5">
-                              <img src="assets/img/slider-2.png" class="img-fluid rounded-start" alt="article image">
-                              <div class="post-time section-subhead fs-6 mt-3">
-                                <small class="d-block text-muted">Posted on</small>
-                                <span class="date d-block">Octobor 26, 2021</span>
-                              </div>
-                            </div>
-                            <div class="col-7">
-                              <div class="ms-sm-3 card-body mt-3 p-0">
-                                <h5 class="card-title section-heading">3 experiments to improve your mobile funnel and reach your goal</h5>
-                                <p class="card-text section-subhead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                      <div class="col-md-3">
-                        <div class="card p-sm-4 bg-white border-0 me-md-4 mb-3">
-                          <div class="row g-0">
-                            <div class="col-5">
-                              <img src="assets/img/slider-3.png" class="img-fluid rounded-start" alt="article image">
-                              <div class="post-time section-subhead fs-6 mt-3">
-                                <small class="d-block text-muted">Posted on</small>
-                                <span class="date d-block">Octobor 26, 2021</span>
-                              </div>
-                            </div>
-                            <div class="col-7">
-                              <div class="ms-sm-3 card-body mt-3 p-0">
-                                <h5 class="card-title section-heading">6 new interesting mobile apps to grow your audience on</h5>
-                                <p class="card-text section-subhead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-              <a class="rounded-circle carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon rounded-circle d-flex justify-content-center align-items-center" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
-              </a>
-              <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon rounded-circle d-flex justify-content-center align-items-center" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
-              </a>
-          </div>
-      </div>
-    </section>
-
-    <!-------------------- customer---------------- -->
-    <section id="customer" v-if="0">
-      <h1 class="fs-1 text-center m-auto section-heading customer-heading">Used By Fellow Productivity Nerds At Places Like...</h1>
-      <img class="w-100 mt-5 m-auto d-block" src="assets/img/customer.png" alt="customer logo">
-    </section>
-
-    <!------------ testimonial ------------>
-    <section id="testimonial" class="position-relative" v-if="0">
-      
-      <div class="testimonial-wrapper px-md-0 m-auto">
-        <div class="row w-100 flex-wrap gx-0 gx-md-3">
-          <div class="col col-md-5 ms-0 ms-lg-5 ps-4 ps-lg-5">
-            <h1 class="fs-1 section-heading testimonial-header text-white">Join Other Founders, Freelancers, Makers And Many-Hat Wearers</h1>
-            <p class="section-subhead mt-3 testimonial-Subheader text-white">Join the thousand of other people just like you who started using Tazkily and took back control of their day</p>
-          </div>
-          <div class="col col-md-6 testimonial-card-wrapper-col">
-            <div class="d-flex px-3 testimonial-card-wrapper">
-              <div class="testimonial-card p-4 py-3 py-md-5 me-0 me-md-3">
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
-                <div class="author mt-3 d-flex align-items-center">
-                  <img src="assets/img/Avatar-2.png" alt="user profile image">
-                  <span class="ms-2">Vincen Mcmahoon</span>
-                </div>
-              </div>
-              <div class="testimonial-card p-4 py-3 py-md-5">
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
-                <div class="author mt-3 d-flex align-items-center">
-                  <img src="assets/img/Avatar-1.png" alt="user profile image">
-                  <span class="ms-2">Laura Mcmahoon</span>
-                </div>
-              </div>
+    </div>
+    <div class="features-area pb-75" style="margin-top: 30px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-6">
+            <div class="features-box">
+              <div class="icon"></div>
+              <h3>LoongARCH</h3>
             </div>
-
-            <span class="testimonial-next rounded-circle d-flex justify-content-center align-items-center" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
-            <span class="testimonial-prev  bg-white rounded-circle d-flex justify-content-center align-items-center" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-6">
+            <div class="features-box">
+              <div class="icon bg2"></div>
+              <h3>RISC-V</h3>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-6">
+            <div class="features-box">
+              <div class="icon bg3"></div>
+              <h3>ARM</h3>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-6">
+            <div class="features-box">
+              <div class="icon bg4"></div>
+              <h3>X86</h3>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="features-area pb-100">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="features-content">
+              <!--span class="sub-title">特征</span-->
+              <h2>关于辰龙</h2>
+              <p>辰龙操作系统发行版建立在 ArceOS 操作系统内核之上。通过利用 ArceOS 内核的优势和功能，辰龙发行版能够提供更好的稳定性、可靠性和安全性。
 
-    <!---------- footer ------------>
-    <footer class="footer">
-      <div class="footer-wrapper m-auto">
-        <div class="row gy-5 row-cols-1 row-cols-lg-2  flex-wrap justify-content-between">
-          <div class="col col-md-5">
-            <img class="footer-logo" src="assets/img/logo300.png" alt="footer logo">
-            <p class="footer-sub my-4 section-subhead">{{main.index_footer1}}</p>
-            <div class="socials d-flex justify-content-between">
+                辰龙发行版的近期目标是支持 ARM、RISC-V、LoongArch、x86 四种架构，对于每种架构，辰龙都将努力至少支持一款主流芯片和开发板，以满足不同用户的需求。
+                
+                </p>
+              <p>总之，辰龙操作系统发行版定位于基于 ArceOS 内核的发行版，致力于在多种硬件平台上进行适配和驱动开发，并提供技术培训和适配迁移服务。通过这些努力，辰龙旨在满足不同用户的需求，提供稳定可靠的操作系统解决方案。</p>
+              <div class="btn-box">
+                <a class="default-btn" href="https://github.com/chenlongos">文档</a><a class="link-btn" href="https://github.com/chenlongos">详情</a>
+              </div>
             </div>
-
-            <p class="d-block d-md-none mt-3"> ChenlongOS <i class="fa-solid fa-heart text-danger"></i> 团队</p>
           </div>
-      
-          <div class="col col-md-7 d-flex gy-5 flex-wrap justify-content-between row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col mb-5 mb-lg-0">
-                    <h5 class="mb-4 text-white section-heading">{{main.index_footer2}}</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">{{main.index_footer3}}</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">{{main.index_footer4}}</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">{{main.index_footer5}}</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">{{main.index_footer6}}</a></li>
+          <div class="col-lg-6 col-md-12">
+            <div class="features-lists">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <h3>LoongArch架构</h3>
+                  <p>龙芯教育派（LPI）
+                    主芯片型号：龙芯2K1000处理器
+                     
+                     </p>
+                </li>
+                <li>
+                  <div class="icon bg2"></div>
+                  <h3>RISC-V架构</h3>
+                  <p>华山派（HuaShan）：
+                    主芯片型号： 算能 CV1812H 
+                     </p>
+                     <p> 
+                    荔枝派（Lychee）：
+                    主芯片型号： 阿里平头哥 曳影TH1520 
+                    
+                    </p>
+                </li>
+                <li>
+                  <div class="icon bg5"></div>
+                  <h3>ARM架构</h3>
+                  <p>
+                    飞腾派（Phytium Pi） 
+                    主芯片型号： 飞腾4核处理器 
+                    </p>
+                    <p> 
+                    树莓派（Raspberry Pi） 
+                    主芯片型号： Broadcom BCM2711  
+                     
+                    </p>
+                </li>
+                <li>
+                  <div class="icon bg3"></div>
+                  <h3>x86架构</h3>
+                  <p>对于x86架构的硬件支持，辰龙操作系统目前测试通用PC，支持U盘启动。</p>
+                </li>
               </ul>
             </div>
-        
-            <div class="col mb-5 mb-lg-0">
-              <h5 class="mb-4 text-white section-heading">{{main.index_footer7}}</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">{{main.index_footer8}}</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">{{main.index_footer9}}</a></li>
-              </ul>
-            </div>
-      
-        <div class="d-flex section-subhead mt-3 mt-sm-5 pt-3 pt-sm-5 justify-content-center justify-content-md-between">
-          <p class="text-center d-block">Copyright © ChenlongOS</p>
-          <span class="d-none d-md-block"></span>
+          </div>
         </div>
       </div>
-    </footer>
-
-      </div> <!--app-->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://lib.baomitu.com/twitter-bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
-
-    <!-- fontawesome -->
-    <!--script
-      src="https://kit.fontawesome.com/aa08d20a7f.js"
-      crossorigin="anonymous"
-    ></script-->
-    <script src="script.js"></script>
-    <script src="https://lib.baomitu.com/vue/3.2.31/vue.global.js"></script>
-    <script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.js"></script>
-    <script  src="https://lib.baomitu.com/axios/0.27.2/axios.min.js"></script>
-
-        <script>
-
-      var datahost = ''
-      const VueApp = {
-        data() {
-            return {
-		        loaded:0,
-        	    main:{}
-	        }
-        },
-
-        created() {
-	    },
-
-        mounted () {
-            var that = this
-            axios
-                .get(datahost+'/api/configs?keyword=index&filter=1')
-                .then(function(response){
-		    var resp = response.data
-                    resp.forEach(function(data){
-                        that.main[data.key] = data.value
-		            });
-                 $("#app").css({"opacity":1});
-                })
-        },
-        methods: {
-        // These methods won't trigger a watcher because we changed only a property of Object/Array,
-        // not the Object/Array itself
-        }
-      }//VueApp
-      window.vue = Vue.createApp(VueApp).mount('#app')
-    </script>
-
-  </body>
+    </div>
+    <!--div class="app-progress-area bg-black ptb-100">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="app-progress-animation-image">
+              <div class="app-img">
+                <div class="animated" style="animation-duration:2s;opacity:0"><img src=
+                "/images/app-progress/app-progress1.png" alt="app-progress"></div>
+              </div>
+              <div class="app-img">
+                <div class="animated" style="animation-duration:2s;opacity:0"><img src=
+                "/images/app-progress/app-progress2.png" alt="app-progress"></div>
+              </div>
+              <div class="app-img">
+                <div class="animated" style="animation-duration:2s;opacity:0"><img src=
+                "/images/app-progress/app-progress3.png" alt="app-progress"></div>
+              </div>
+              <div class="app-img">
+                <div class="animated" style="animation-duration:2s;opacity:0"><img src=
+                "/images/app-progress/app-progress4.png" alt="app-progress"></div>
+              </div>
+              <div class="app-img main-image"><img src="/images/app-progress/progress-main.png" alt=
+              "app-progress"></div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="app-progress-content text-white">
+              <span class="sub-title">APP PROGRESS</span>
+              <h2>Set Up The Challenges and Track Your Progress</h2>
+              <p>Cloud based storage for your data backup just log in with your mail account from play store and using
+              whatever you want for your business purpose orem ipsum dummy text. never missyour chance its just began.
+              backup just log in with your mail account from.</p>
+              <p>Most provabily best for your data backup just log in with your mail account from play store and using
+              whatever you want for your business purpose orem ipsum dummy backup just log in with your mail account
+              from.</p><a class="default-btn" href="/sign-in/">Start Free Trial</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-area ptb-100">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="intro-video-content">
+              <span class="sub-title">INTRO VIDEO</span>
+              <h2>Watch Our Most Watched Texap App Video</h2>
+              <p>Cloud based storage for your data backup just log in with your mail account from play store and using
+              whatever you want for your business purpose orem ipsum dummy text. Never missyour chance its just began.
+              Cloud based storage for your data backup just log in with your mail account from play store and using
+              whatever you want for your business purpose orem ipsum dummy text. Never missyour chance its just
+              began.</p><a class="default-btn" href="/contact/">Get Started</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="intro-video-box">
+              <img src="/images/video/video-img1.jpg" alt="video-img">
+              <div class="video-btn popup-youtube"></div>
+              <div class="shape"><img class="shape10" src="/images/shape/shape13.png" alt="image"><img class="shape11"
+              src="/images/shape/shape14.png" alt="image"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screenshots-area pb-100">
+      <div class="container">
+        <div class="section-title">
+          <span class="sub-title">APP SCREENS</span>
+          <h2>Beautifully Crafted All App Screenshots</h2>
+        </div>
+        <div class="swiper-container mySwiper screenshots-swiper-slides">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide" data-swiper-slide-index="0"><img src="/images/screenshots/screen1.png" alt=
+            "screenshots"></div>
+            <div class="swiper-slide" data-swiper-slide-index="1"><img src="/images/screenshots/screen1.png" alt=
+            "screenshots"></div>
+            <div class="swiper-slide" data-swiper-slide-index="2"><img src="/images/screenshots/screen1.png" alt=
+            "screenshots"></div>
+            <div class="swiper-slide" data-swiper-slide-index="3"><img src="/images/screenshots/screen1.png" alt=
+            "screenshots"></div>
+            <div class="swiper-slide" data-swiper-slide-index="4"><img src="/images/screenshots/screen1.png" alt=
+            "screenshots"></div>
+            <div class="swiper-slide" data-swiper-slide-index="5"><img src="/images/screenshots/screen1.png" alt=
+            "screenshots"></div>
+            <div class="swiper-slide" data-swiper-slide-index="6"><img src="/images/screenshots/screen1.png" alt=
+            "screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6"><img src=
+            "/images/screenshots/screen1.png" alt="screenshots"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="software-integrations-area bg-gradient-color ptb-100">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="software-integrations-content white-color">
+              <span class="sub-title">SOFTWARE INTEGRATIONS</span>
+              <h2>Easy & Perfect Solution With Latest Software Integrations</h2>
+              <p>Cloud based storage for your data backup just log in with your mail account from play store & using
+              whatever you want for your business purpose orem ipsum dummy text. never missyour chance its just began.
+              backup just log in with your mail account from.</p>
+              <p>Most provabily best for your data backup just log in with your mail account from play store and using
+              whatever you want for your business purpose orem ipsum dummy.</p><a class="default-btn" href=
+              "/contact/">Get Started</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="animated" style="animation-duration:1s;opacity:0">
+              <div class="software-integrations-list">
+                <img src="/images/shape/border.png" alt="border">
+                <ul>
+                  <li><img src="/images/software-integrations/atlassian.png" class="atlassian" alt="atlassian"></li>
+                  <li><img src="/images/software-integrations/skype.png" class="skype" alt="skype"></li>
+                  <li><img src="/images/software-integrations/gdrive.png" class="gdrive" alt="gdrive"></li>
+                  <li><img src="/images/software-integrations/slack.png" class="slack" alt="slack"></li>
+                  <li><img src="/images/software-integrations/jira.png" class="jira" alt="jira"></li>
+                  <li><img src="/images/software-integrations/frame.png" class="frame" alt="frame"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shape8"><img src="/images/shape/shape7.png" alt="shape"></div>
+    </div>
+    <div class="feedback-area pt-100">
+      <div class="container">
+        <div class="section-title">
+          <span class="sub-title">CLIENT REVIEWS</span>
+          <h2>What Our Customer Say About Us</h2>
+        </div>
+        <div class="swiper-container feedback-swiper-slides mySwiper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
+              <div class="single-feedback-item">
+                <div class="client-info">
+                  <img src="/images/user/user3.jpg" alt="user">
+                  <div class="title">
+                    <h3>James Andy</h3><span>Moodle Developer</span>
+                  </div>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+                Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                <div class="rating">
+                  <h5>Theme Customization</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-swiper-slide-index="0">
+              <div class="single-feedback-item">
+                <div class="client-info">
+                  <img src="/images/user/user1.jpg" alt="user">
+                  <div class="title">
+                    <h3>Deanna Hodges</h3><span>Spotify Developer</span>
+                  </div>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+                Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                <div class="rating">
+                  <h5>Theme Customization</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-swiper-slide-index="1">
+              <div class="single-feedback-item">
+                <div class="client-info">
+                  <img src="/images/user/user2.jpg" alt="user">
+                  <div class="title">
+                    <h3>Londynn Vargas</h3><span>PHP Developer</span>
+                  </div>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+                Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                <div class="rating">
+                  <h5>Theme Customization</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-swiper-slide-index="2">
+              <div class="single-feedback-item">
+                <div class="client-info">
+                  <img src="/images/user/user3.jpg" alt="user">
+                  <div class="title">
+                    <h3>James Andy</h3><span>Moodle Developer</span>
+                  </div>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+                Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                <div class="rating">
+                  <h5>Theme Customization</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+              <div class="single-feedback-item">
+                <div class="client-info">
+                  <img src="/images/user/user1.jpg" alt="user">
+                  <div class="title">
+                    <h3>Deanna Hodges</h3><span>Spotify Developer</span>
+                  </div>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+                Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+                <div class="rating">
+                  <h5>Theme Customization</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="free-trial-area">
+      <div class="container">
+        <div class="free-trial-content bg-color">
+          <span class="sub-title">FREE TRIAL</span>
+          <h2>Start Your 14 Days Free Trials Today!</h2>
+          <form class="free-trial-form">
+            <input type="text" class="input-newsletter" placeholder="Enter Your Email Address" name=
+            "email"><button type="submit" class="default-btn">Get Started</button>
+          </form>
+          <div class="shape8"><img src="/images/shape/shape7.png" alt="shape"></div>
+          <div class="shape9"><img src="/images/shape/shape8.png" alt="shape"></div>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div-->
+    <div class="partner-area ptb-100">
+      <div class="container"></div>
+    </div>
+    <div class="footer-area">
+      <div class="container">
+        <div class="footer-content">
+          <a class="logo" href="/"><img src="/images/black-logo.png" alt="logo"></a>
+          <!--ul class="social-links">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank"></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" target="_blank"></a>
+            </li>
+            <li>
+              <a href="https://www.messenger.com/" target="_blank"></a>
+            </li>
+            <li>
+              <a href="https://github.com/" target="_blank"></a>
+            </li>
+          </ul-->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/#/">服务</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#/">技术支持</a>
+            </li>
+ 
+            <li class="nav-item">
+              <a class="nav-link" href="/#/">问答</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#/">联系我们</a>
+            </li>
+          </ul>
+          <p class="copyright">Copyright © <!-- -->2023<!-- --> <!-- --><strong>ChenLongOS</strong>. 
+          <!-- --><a href="https://chenlongos.cn/" target="_blank"> </a></p>
+        </div>
+      </div>
+    </div>
+    <div class="jsx-5e588ef741f633f0 go-top"></div>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+  {"props":{"pageProps":{}},"page":"/index-2","query":{},"buildId":"T-sOTQUz-S7j8Cmc9JBws","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}
+  </script>
+</body>
 </html>

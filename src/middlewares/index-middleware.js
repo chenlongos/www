@@ -28,6 +28,7 @@ module.exports = (config, { strapi })=> {
         strapi.server.use(router.routes())
 
         strapi.server.use(staticdir(path.resolve('./public')))
+        strapi.server.use(staticdir(path.resolve('./public/texap')))
 
 };
 
