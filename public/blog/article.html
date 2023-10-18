@@ -1,0 +1,141 @@
+
+
+{% extends '../layout.html' %}
+
+{% block main_body %}
+
+
+
+    <div class="page-title-area">
+      <div class="container">
+        <div class="page-title-content">
+          <h2>文章</h2>
+          <ul>
+            <li>
+              <a href="/">首页</a>
+            </li>
+            <li> 文档 </li>
+          </ul>
+        </div>
+      </div>
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      
+    </div>
+    <div class="blog-details-area ptb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <div class="blog-details-desc">
+ 
+              <div class="article-content">
+                <h4> {{title}}</h4>
+                <hr>
+                <div v-html="content"></div>
+                </div> 
+               
+ 
+              </div>
+              <div class="article-footer">
+                 
+              </div>
+ 
+
+            
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="right-sidebar">
+              <div class="widget-area">
+                <div class="widget widget_search">
+ 
+                </div>
+                <div class="widget widget_posts_thumb">
+                  <h3 class="widget-title">更多文章</h3>
+
+                  <article class="item">
+                    <a class="thumb" href="/#"></a>
+                    <div class="info">
+                      <h4 class="title usmall"><a href="/#/"> 
+                       </a></h4><span class="date">  </span>
+                    </div>
+                  </article>
+                  
+                  
+                 
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endblock%}
+
+    {% block externjs %}
+<script src="https://lib.baomitu.com/vue/3.2.31/vue.global.js"></script>
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.js"></script>
+<script  src="https://lib.baomitu.com/axios/0.27.2/axios.min.js"></script>
+<script   src="https://lib.baomitu.com/marked/8.0.1/marked.min.js"></script>
+<style>
+  .navbar-area.navbar-style-two .texap-nav .navbar .navbar-nav .nav-item a {
+    color: var(--whiteColor)
+}
+  </style>
+    <script>
+
+function getUrlParam(name){
+
+var reg=new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+var r= window.location.search.substr(1).match(reg);
+
+if(r != null) {
+    return unescape(r[2]);
+}
+return null;
+}
+
+var id = getUrlParam("id")
+
+ 
+
+  var datahost = ''
+  const VueApp = {
+    data() {
+        return {
+        loaded:0,
+          title:"",
+          content:"",
+      }
+    },
+
+    created() {
+  },
+
+    mounted () {
+        ///api/configs?keyword=index&filter=1
+        var that = this
+        axios
+            .get(datahost+'/api/articles/' + id)
+            .then(function(response){
+              var resp = response.data
+              that.title = resp['data'].attributes.title
+              that.content = resp['data'].attributes.content
+              that.content =  marked.parse(that.content)
+             $("#app").css({"opacity":1});
+            })
+    },
+    methods: {
+    // These methods won't trigger a watcher because we changed only a property of Object/Array,
+    // not the Object/Array itself
+    }
+  }//VueApp
+  window.vue = Vue.createApp(VueApp).mount('#app')
+</script>
+{% endblock%}
