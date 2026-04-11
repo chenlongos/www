@@ -15,11 +15,11 @@
         <span class="text-lg font-semibold tracking-tight text-white">辰龙机器人</span>
       </a>
       <nav class="flex flex-wrap items-center gap-2 text-sm">
-        <a href="#foundation" class="rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-white">操作系统基础</a>
         <a href="#ecosystem" class="rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-white">开源生态</a>
         <a href="#courses" class="rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-white">课程与文档</a>
         <a href="https://opencamp.cn/ChenLong/camp/S1" class="rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-white" target="_blank" rel="noopener noreferrer">训练营</a>
         <a href="#purchase" class="rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-white">购买与交流</a>
+        <a href="#foundation" class="rounded-lg px-3 py-2 text-slate-300 hover:bg-slate-800 hover:text-white">关于辰龙</a>
         <a href="https://github.com/chenlongos" class="rounded-lg bg-amber-500 px-4 py-2 font-medium text-slate-950 hover:bg-amber-400" target="_blank" rel="noopener noreferrer">GitHub 组织</a>
       </nav>
     </div>
@@ -39,7 +39,7 @@
           </p>
           <div class="mt-8 flex flex-wrap gap-3">
             <a href="https://github.com/orgs/chenlongos/repositories" class="inline-flex items-center justify-center rounded-xl bg-amber-500 px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-amber-500/20 hover:bg-amber-400" target="_blank" rel="noopener noreferrer">浏览全部仓库</a>
-            <a href="#foundation" class="inline-flex items-center justify-center rounded-xl border border-slate-600 px-5 py-3 text-sm font-medium text-slate-200 hover:border-slate-500 hover:bg-slate-900">操作系统与内核</a>
+            <a href="#foundation" class="inline-flex items-center justify-center rounded-xl border border-slate-600 px-5 py-3 text-sm font-medium text-slate-200 hover:border-slate-500 hover:bg-slate-900">关于辰龙</a>
           </div>
         </div>
         <div class="mt-12 flex flex-1 justify-center lg:mt-0">
@@ -59,49 +59,6 @@
             </picture>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="foundation" class="border-b border-slate-800 bg-slate-900/40">
-      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div class="max-w-3xl">
-          <h2 class="text-3xl font-bold text-white">操作系统基础：辰龙、ArceOS 与 StarryOS</h2>
-          <p class="mt-4 leading-relaxed text-slate-400">
-            <strong class="font-medium text-slate-200">辰龙操作系统（ChenlongOS）</strong>是基于清华大学
-            <a href="https://github.com/arceos-org/arceos" class="text-amber-400 underline decoration-amber-400/40 underline-offset-4 hover:text-amber-300" target="_blank" rel="noopener noreferrer">ArceOS</a>
-            的发行版，面向智能汽车、机器人、物联网等场景，强调高安全、高性能与自主可控的国产操作系统方案。发行版建立在 ArceOS 内核能力之上，在多种硬件上做适配与驱动开发，并提供技术培训与迁移支持；近期目标是在
-            <span class="text-slate-300">ARM、RISC-V、LoongArch、x86</span>
-            四种架构上各至少支持一款主流芯片与开发板。更多说明见
-            <a href="https://www.chenlongos.cn/" class="text-amber-400 underline decoration-amber-400/40 underline-offset-4 hover:text-amber-300" target="_blank" rel="noopener noreferrer">ChenLongOS.cn</a>
-            与
-            <a href="https://github.com/chenlongos/docs" class="text-amber-400 underline decoration-amber-400/40 underline-offset-4 hover:text-amber-300" target="_blank" rel="noopener noreferrer">chenlongos/docs</a>。
-          </p>
-        </div>
-        <div class="mt-10 grid gap-6 lg:grid-cols-2">
-          <article class="rounded-2xl border border-slate-800 bg-slate-950/50 p-6">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="text-xl font-semibold text-white">ArceOS</h3>
-              <span class="shrink-0 rounded-full bg-amber-500/15 px-2.5 py-1 text-xs font-medium text-amber-300">模块化内核 · Rust</span>
-            </div>
-            <p class="mt-3 text-sm leading-relaxed text-slate-400">
-              实验性的模块化操作系统，采用 Rust 编写；Apache-2.0 等多许可证。辰龙发行版所依赖的内核基座，也是 StarryOS 所基于的上游之一。
-            </p>
-            <a href="https://github.com/arceos-org/arceos" class="mt-4 inline-flex text-sm font-medium text-amber-400 hover:text-amber-300" target="_blank" rel="noopener noreferrer">arceos-org/arceos →</a>
-          </article>
-          <article class="rounded-2xl border border-slate-800 bg-slate-950/50 p-6">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="text-xl font-semibold text-white">StarryOS</h3>
-              <span class="shrink-0 rounded-full bg-cyan-500/15 px-2.5 py-1 text-xs font-medium text-cyan-300">单体内核 · 基于 ArceOS</span>
-            </div>
-            <p class="mt-3 text-sm leading-relaxed text-slate-400">
-              基于 ArceOS 的<strong class="font-medium text-slate-300">单体内核</strong>实现，仓库 README 中项目名为 StarryOS。可与 ArceOS 生态工具链、构建方式对照学习内核形态差异。
-            </p>
-            <a href="https://github.com/arceos-org/starry-next" class="mt-4 inline-flex text-sm font-medium text-amber-400 hover:text-amber-300" target="_blank" rel="noopener noreferrer">arceos-org/starry-next（StarryOS）→</a>
-          </article>
-        </div>
-        <p class="mt-8 text-sm text-slate-500">
-          硬件路线示例（与官网一致）：LoongArch 龙芯教育派 2K1000；RISC-V 华山派（算能 CV1812H）、荔枝派（平头哥 TH1520）；ARM 飞腾派、树莓派；x86 通用 PC 与 U 盘启动实验。
-        </p>
       </div>
     </section>
 
@@ -196,6 +153,50 @@
             <p class="mt-2 text-xs text-slate-500">在 QQ 中搜索群号即可申请加入。</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="foundation" class="scroll-mt-28 border-t border-slate-800 bg-slate-900/40">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div class="max-w-3xl">
+          <h2 class="text-3xl font-bold text-white">关于辰龙</h2>
+          <p class="mt-4 leading-relaxed text-slate-400">
+            <strong class="font-medium text-slate-200">辰龙操作系统（ChenlongOS）</strong>是基于清华大学
+            <a href="https://github.com/arceos-org/arceos" class="text-amber-400 underline decoration-amber-400/40 underline-offset-4 hover:text-amber-300" target="_blank" rel="noopener noreferrer">ArceOS</a>
+            的发行版，面向智能汽车、机器人、物联网等场景，强调高安全、高性能与自主可控的国产操作系统方案。发行版建立在 ArceOS 内核能力之上，在多种硬件上做适配与驱动开发，并提供技术培训与迁移支持；近期目标是在
+            <span class="text-slate-300">ARM、RISC-V、LoongArch、x86</span>
+            四种架构上各至少支持一款主流芯片与开发板。更多说明见
+            <a href="https://www.chenlongos.cn/" class="text-amber-400 underline decoration-amber-400/40 underline-offset-4 hover:text-amber-300" target="_blank" rel="noopener noreferrer">ChenLongOS.cn</a>
+            与
+            <a href="https://github.com/chenlongos/docs" class="text-amber-400 underline decoration-amber-400/40 underline-offset-4 hover:text-amber-300" target="_blank" rel="noopener noreferrer">chenlongos/docs</a>。
+          </p>
+        </div>
+        <h3 class="mt-12 text-xl font-semibold text-white">操作系统基础：ArceOS 与 StarryOS</h3>
+        <div class="mt-6 grid gap-6 lg:grid-cols-2">
+          <article class="rounded-2xl border border-slate-800 bg-slate-950/50 p-6">
+            <div class="flex items-start justify-between gap-3">
+              <h4 class="text-xl font-semibold text-white">ArceOS</h4>
+              <span class="shrink-0 rounded-full bg-amber-500/15 px-2.5 py-1 text-xs font-medium text-amber-300">模块化内核 · Rust</span>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+              实验性的模块化操作系统，采用 Rust 编写；Apache-2.0 等多许可证。辰龙发行版所依赖的内核基座，也是 StarryOS 所基于的上游之一。
+            </p>
+            <a href="https://github.com/arceos-org/arceos" class="mt-4 inline-flex text-sm font-medium text-amber-400 hover:text-amber-300" target="_blank" rel="noopener noreferrer">arceos-org/arceos →</a>
+          </article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-950/50 p-6">
+            <div class="flex items-start justify-between gap-3">
+              <h4 class="text-xl font-semibold text-white">StarryOS</h4>
+              <span class="shrink-0 rounded-full bg-cyan-500/15 px-2.5 py-1 text-xs font-medium text-cyan-300">单体内核 · 基于 ArceOS</span>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+              基于 ArceOS 的<strong class="font-medium text-slate-300">单体内核</strong>实现，仓库 README 中项目名为 StarryOS。可与 ArceOS 生态工具链、构建方式对照学习内核形态差异。
+            </p>
+            <a href="https://github.com/arceos-org/starry-next" class="mt-4 inline-flex text-sm font-medium text-amber-400 hover:text-amber-300" target="_blank" rel="noopener noreferrer">arceos-org/starry-next（StarryOS）→</a>
+          </article>
+        </div>
+        <p class="mt-8 text-sm text-slate-500">
+          硬件路线示例（与官网一致）：LoongArch 龙芯教育派 2K1000；RISC-V 华山派（算能 CV1812H）、荔枝派（平头哥 TH1520）；ARM 飞腾派、树莓派；x86 通用 PC 与 U 盘启动实验。
+        </p>
       </div>
     </section>
   </main>
