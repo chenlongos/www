@@ -8,7 +8,9 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "build:css": "npx @tailwindcss/cli -i ./styles/tailwind.css -o ./public/css/tailwind.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i ./styles/tailwind.css -o ./public/css/tailwind.css --watch"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.12.7",
@@ -31,5 +33,9 @@
     "node": ">=16.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
 }
